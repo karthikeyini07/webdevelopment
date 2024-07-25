@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Html form</title>
+        <script>
+           function showData()
+           {
+                var data=document.getElementById("txtpass").value;
+                document.getElementById("p1").innerHTML=data;
+           }
+        </script>
+        <style>
+          h1{
+			text-align: center;
+			color: #343a40;
+		    }
+       </style>
+       </head>
+    <body>
+        <h1>REGISTRATION FORM</h1>
+        <form name="register form" method="get" action="0" enctype="multipart/form-data"><!--ation is used for a store a data into another file also it must be in URL type-->
+            <table cellspacing="30px" align="center" border="1" rules="rows" cellpadding="20px">
+                <tr>
+                    <td>User name</td>
+                    <td><input type="text" variable_name="tstusr" maxlength="5"autofocus placeholder="username" required/>
+                     <tr> 
+                        <td> Roll number</td>
+                        <td><input
+                        oninput="this.setcustomervalidity('')"
+                        oninvalid="this.setustomervalidity('please enter username')" 
+                        tabindex="1" title="user name field"
+                        autocomplete="off" />
+                        </td></tr> <!--name is used to store the user data and acces from server-->
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" value="s1" readonly>
+                            <input type="text" value="s1" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                       <td>password</td>
+                       <td><input type="password" name="txtpass" maxlength="10" minlength="0" onkeypress="showdata()"/></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="txtmail" /></td>
+                     </tr>
+                     <tr>
+                        <td>gender</td>
+                        <td><input type="radio" value="male" name="gender"/>male
+                        <input type="radio" value="Female" name="gender"/>Female
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Technologies</td>
+                        <td>
+                        <input type="checkbox" value="java" name="tech[]"/>java <!--here tech name as array-->
+                        <input type="checkbox" value="python" name="tech[]"/>python
+                        <input type="checkbox" value="C" name="tech[]"/>C 
+                        <input type="checkbox" value="C++" name="tech[]"/>C++
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>
+                            <select name="country">
+                                <option>SELECT</option>
+                                <option value="usa">UNITED STATES OF AMERICA</option>
+                                <option value="uk">UNITED KINGDOM</option>
+                                <option value="ind">INDIA</option>
+                                <option value="rsa">SOUTH AFRICA</option>
+                            </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>joining date</td>
+                        <td><input type="datetime-local"/></td>
+                      </tr>
+                      <tr>
+                        <td>choose profile picture</td>
+                        <td><input type="file"/></td>
+                      </tr>
+                      <tr>
+                        <td>Range</td>
+                        <td><input type="range"></td>
+                      </tr>
+                      <tr>
+                        <td>color</td>
+                        <td><input type="color"></td>
+                      </tr>
+                     <tr>
+                     <td><input type="submit" name="mitsub"/></td>
+                    </tr>
+            </table>
+        </form>
+    </body>
+</html>

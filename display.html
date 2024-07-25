@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+           CSS DISPLAY
+        </title>
+        <script>
+             function showheading()
+            {
+                document.getElementsById("h1").style.display="block";
+            }
+        </script>
+        <style>
+           
+            h1{
+               display: none;
+            }
+            button{
+                background-color:antiquewhite;
+                cursor: pointer;
+
+            }
+            #d1
+            {
+                display: none;
+            }
+            #d2
+            {
+                display:inline;
+                background-color: lightblue;
+                
+            }
+            #d3
+            {
+                display:block;
+                background-color: aquamarine;
+                height:auto;
+                width:80%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="showheading()">Click</button>
+        <h1 id="h1">This is heading one</h1>
+        <div>
+            ParagraphParagraphs are the group of sentences <p id="d1"combined together>, about a certain</p> topic. It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc. We can say that a well-structured paragraph is the essence of good writing. The purposes of the paragraph are to give information, to explain something, to tell a story, and to convince someone that our idea is right.
+            Paragraphs <p id="d2" >are blocks of</p> <p id="d3">textual content that segment</p> out a larger piece of writing—stories, novels, articles, creative writing, or professional writing portions—making it less complicated to read and understand. Excellent paragraphs are an available writing skill for plenty of types of literature, and proper writers
+        </div>
+    </body>
+</html>

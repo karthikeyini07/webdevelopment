@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            CSS FLEX
+        </title>
+        <style>
+        .container
+        {
+            border:12px solid=yellow;
+            background-color: antiquewhite;
+            height:auto;
+            width:80%;
+            margin-left:25%;
+            margin-right:100px;
+            display:flex;
+            flex-direction:row;
+        }
+        .container div{
+            border:12px solid=violet;
+            background-color: aquamarine;
+            height:auto;
+            margin:10px;
+            font-size:larger;
+            font-weight:bold;
+        }
+        .d1{
+            height:100px;
+            width:80%;
+            align-items: center;
+            display:flex;
+            justify-content: center; 
+        }
+        .d1 div
+        {
+            height:100px;
+            width:10%;
+            margin:12px;
+            background-color: brown;
+            /*spacebetween,right,start,end,left,spaceeven,stretch*/
+
+        }
+        .d2{
+            height:100px;
+            width:80%;
+            align-items: center;
+            display:flex;
+            justify-content:center;
+             
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <div>div1</div>
+          <div>div2</div>
+          <div style="flex-grow:2;">div3</div>
+          <div>div4</div>
+          <div>div5</div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div>div1</div>
+          <div>div2</div>
+          <div>div3</div>
+          <div>div4</div>
+          <div>div5</div>
+          <div>div6</div>
+          <div>div7</div>
+          <div>div8</div>
+          <div>div9</div>
+          <div>div10</div>
+         <!-- <div>div11</div>
+          <div>div12</div>
+          <div>div13</div>
+          <div>div14</div>
+          <div>div15</div>-->
+        </div>
+        <div class="d1">
+            <div>div1</div>
+          <div>div2</div>
+          <div style="flex-grow:2">div3</div>
+          <div>div4</div>
+          <div>div5</div>
+        </div>
+    </body>
+</html>
